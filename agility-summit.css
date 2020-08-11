@@ -3,6 +3,18 @@
  * All custom overrides styles for the agility summit.
  */
 
+/**
+ * Universal defaults and direct body props.
+ */
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/**
+ * Light blue background sections.
+ */
+#pb-block-136628 {
+  background-color: #e0f4f5;
+  padding-top: 70px !important;
+  padding-bottom: 70px !important;
 }
