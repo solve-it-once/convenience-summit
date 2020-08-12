@@ -35,7 +35,6 @@ h2 {
   letter-spacing: 0.72px;
   line-height: 1.2;
   margin: 0;
-  text-transform: uppercase;
 }
 /**
  * h2s that are direct children of containers should be spacey.
