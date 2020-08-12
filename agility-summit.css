@@ -3,10 +3,20 @@
  * All custom overrides styles for the agility summit.
  */
 
+:root {
+  color: #414243;
+  color: #343f58;
+  color: #e1f5f5;
+  color: #00ad9f;
+  color: #e4f8fd;
+  color: #2b3c4b;
+}
+
 /**
  * Universal defaults and direct body props.
  */
 body {
+  color: #2b3c4b;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
@@ -36,8 +46,19 @@ h2 {
   margin: 0;
   text-transform: uppercase;
 }
+/**
+ * h2s that are direct children of containers should be spacey.
+ */
 .container > .editable > h2 {
   padding: 70px 0 50px;
+}
+/**
+ * Vlad's intro has a weird heading.
+ */
+#pb-block-136434 h2 {
+  font-weight: 900;
+  padding: 20px 0;
+  text-transform: none;
 }
 
 /**
@@ -93,6 +114,13 @@ header .navbar {
 }
 
 /**
+ * Remove bottom padding from columns component. Add it back below.
+ */
+.pb-block-type-columns {
+  padding-bottom: 0 !important;
+}
+
+/**
  * Top spacing for sections.
  */
 .padding-top--70px,
@@ -133,135 +161,26 @@ header .navbar {
   border: 0 none;
 }
 
-:root {
-  color: #414243;
-  color: #343f58;
-  color: #e1f5f5;
-  color: #00ad9f;
-  color: #e4f8fd;
+/**
+ * Top menu.
+ */
+header .navbar .navbar-nav .nav-item .nav-link {
   color: #2b3c4b;
+  font-family: 'Montserrat', Verdana, sans-serif;
 }
-
-.main-menu {
-  /* Style for "Home" */
-  width: 748px;
-  height: 29px;
-  color: #2b3c4b;
-  font-family: Montserrat;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 52px;
-  /* Text style for "Home" */
-  font-family: "Montserrat - Regular";
-  font-weight: 400;
-  /* Text style for "Agenda" */
-  font-family: "Montserrat - Black";
-  font-weight: 900;
-}
-.register {
+header .navbar .navbar-nav .nav-item .nav-link[href^="/checkout/s"] {
+  background-color: #00ad9f;
   border-radius: 4px;
+  color: #fff;
+  transition: all .3s ease-in;
+}
+header .navbar .navbar-nav .nav-item .nav-link[href^="/checkout/s"]:hover,
+header .navbar .navbar-nav .nav-item .nav-link[href^="/checkout/s"]:active,
+header .navbar .navbar-nav .nav-item .nav-link[href^="/checkout/s"]:focus {
+  background-color: #343f58;
 }
 
-.byline {
-  /* Style for "Scott Boat" */
-  width: 388px;
-  height: 112px;
-  color: #ffffff;
-  font-family: "Open Sans - Semibold";
-  font-size: 30px;
-  font-weight: 400;
-  /* Text style for "Scott Boat" */
-  font-family: "Open Sans Semibold";
-  font-weight: 600;
-  letter-spacing: 0.6px;
-  /* Text style for "Chipotle ," */
-  font-family: "Open Sans";
-  letter-spacing: 0.6px;
-  /* Text style for "and" */
-  font-family: "Open Sans";
-  letter-spacing: 0.6px;
-}
-
-.lightning-round h3 {
-  /* Style for "Creating a" */
-  width: 795px;
-  height: 217px;
-  color: #414243;
-  font-family: "Open Sans";
-  font-size: 36px;
-  font-weight: 400;
-  /* Text style for "Creating a" */
-  color: #00ad9f;
-  font-family: "Open Sans - Semibold";
-  font-weight: 600;
-  line-height: 52px;
-  /* Text style for ", ot otoko" */
-  font-family: "Open Sans";
-  line-height: 52px;
-  /* Text style for "Kasi shok" */
-  font-family: "Open Sans";
-  line-height: 72px;
-}
-
-.ops-leaders-intro {
-  /* Style for "Hear from" */
-  width: 2045px;
-  height: 584px;
-  color: #414243;
-  font-family: "Open Sans";
-  font-size: 42px;
-  font-weight: 400;
-  /* Text style for "Hear from" */
-  line-height: 60px;
-  /* Text style for "• Creating" */
-  line-height: 68px;
-}
-
-.a-leader-text {
-  /* Style for "John Doe," */
-  width: 412px;
-  height: 274px;
-  color: #414243;
-  font-family: "Open Sans";
-  font-size: 36px;
-  font-weight: 400;
-  /* Text style for "John Doe," */
-  color: #00ad9f;
-  font-family: "Open Sans - Semibold";
-  font-weight: 600;
-  line-height: 52px;
-  /* Text style for "Kasi shok" */
-  font-family: "Open Sans";
-  line-height: 72px;
-  /* Text style for "ot otoko k" */
-  font-family: "Open Sans";
-  line-height: 52px;
-}
-
-.tech-hub {
-  /* Style for "Live Produ" */
-  width: 555px;
-  height: 269px;
-  color: #414243;
-  font-family: "Open Sans";
-  font-size: 36px;
-  font-weight: 400;
-  /* Text style for "L, ive Pro" */
-  color: #41c8bf;
-  font-family: "Open Sans - Semibold";
-  font-weight: 600;
-  letter-spacing: 0.72px;
-  line-height: 72px;
-  /* Text style for "Ganders" */
-  font-family: "Open Sans";
-  line-height: 72px;
-  /* Text style for "at bakit a" */
-  font-family: "Open Sans";
-  line-height: 52px;
-  /* Text style for "," */
-  font-family: "Open Sans - Semibold";
-  font-size: 40px;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-  line-height: 52px;
+header .navbar .navbar-nav .nav-item.active .nav-link {
+  font-family: 'Montserrat', Verdana, sans-serif;
+  font-weight: 900;
 }
