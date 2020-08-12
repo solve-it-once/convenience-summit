@@ -11,10 +11,42 @@ body {
 }
 
 /**
+ * Headings and other page elements use the secondary font.
+ */
+.font-family--secondary,
+.event-navbar,
+h1,
+h2 {
+  font-family: 'Montserrat', Verdana, sans-serif;
+}
+
+/**
+ * Make the navbar a little tighter.
+ */
+header .navbar {
+  padding: 30px 0;
+}
+
+/**
  * Light blue background sections.
  */
-#pb-block-136628 {
+.background-color--blue-light,
+#pb-block-136628,
+#pb-block-136433 {
   background-color: #e0f4f5;
   padding-top: 70px !important;
   padding-bottom: 70px !important;
+}
+
+/**
+ * Dark blue sections (no spacing).
+ */
+.background-color--blue-dark,
+#pb-block-136438,
+#pb-block-136537 {
+  background-color: #353f58;
+  color: #fff;
+}
+#pb-block-136438 h2 {
+  color: #fff;
 }
