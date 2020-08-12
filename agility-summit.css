@@ -170,6 +170,23 @@ h3 + p > b {
 }
 
 /**
+ * Keynote bylines.
+ */
+#pb-block-136537 .pb-block-column .pb-block-type-columns p {
+  font-size: 16px;
+}
+
+/**
+ * Keynote fanciness.
+ */
+.pb-block-column-136537 > .pb-block-type-text {
+  padding-bottom: 30px !important;
+}
+@media all and (min-width: 768px) {
+
+}
+
+/**
  * Top menu.
  */
 header .navbar {
@@ -199,4 +216,13 @@ header .navbar .navbar-nav .nav-item .nav-link[href^="/checkout/s"]:focus {
 header .navbar .navbar-nav .nav-item.active .nav-link {
   font-family: 'Montserrat', Verdana, sans-serif;
   font-weight: 900;
+}
+
+/**
+ * Responsive styles.
+ */
+@media all and (max-width: 767px) {
+  .pb-block-column {
+    padding-bottom: 40px;
+  }
 }
