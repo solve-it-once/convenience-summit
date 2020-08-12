@@ -21,6 +21,47 @@ h2 {
 }
 
 /**
+ * Heading 1
+ */
+h1 {}
+
+/**
+ * Heading 2
+ */
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.72px;
+  line-height: 1.2;
+  margin: 0;
+  text-transform: uppercase;
+}
+.container > .editable > h2 {
+  padding: 70px 0 50px;
+}
+
+/**
+ * Heading 3
+ */
+h3 {
+  color: #41c8bf;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+  line-height: 1.45;
+  margin: 0;
+}
+/**
+ * Subtitle of "Keynote discussions" since there is not h4.
+ */
+h3 + p > b {
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+/**
  * Make the navbar a little tighter.
  */
 header .navbar {
@@ -31,11 +72,11 @@ header .navbar {
  * Light blue background sections.
  */
 .background-color--blue-light,
-#pb-block-136628,
+#pb-block-136602,
+#pb-block-136601,
+#pb-block-136603,
 #pb-block-136433 {
   background-color: #e0f4f5;
-  padding-top: 70px !important;
-  padding-bottom: 70px !important;
 }
 
 /**
@@ -49,4 +90,178 @@ header .navbar {
 }
 #pb-block-136438 h2 {
   color: #fff;
+}
+
+/**
+ * Top spacing for sections.
+ */
+.padding-top--70px,
+#pb-block-136433 {
+  padding-top: 70px !important;
+}
+
+/**
+ * Top spacing for sections.
+ */
+.padding-bottom--70px,
+#pb-block-136433 {
+  padding-bottom: 70px !important;
+}
+
+/**
+ * Vlad's welcome is narrow than the content below.
+ */
+#pb-block-136433 > .container {
+  max-width: 860px;
+}
+
+/**
+ * The modal toggle should have some affordances.
+ */
+.hover-state {
+  cursor: pointer;
+}
+.hover-state:hover {
+  filter: brightness(125%);
+}
+
+/**
+ * Remove the button-ness from the image button.
+ */
+.button--no-styles {
+  background: transparent;
+  border: 0 none;
+}
+
+:root {
+  color: #414243;
+  color: #343f58;
+  color: #e1f5f5;
+  color: #00ad9f;
+  color: #e4f8fd;
+  color: #2b3c4b;
+}
+
+.main-menu {
+  /* Style for "Home" */
+  width: 748px;
+  height: 29px;
+  color: #2b3c4b;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52px;
+  /* Text style for "Home" */
+  font-family: "Montserrat - Regular";
+  font-weight: 400;
+  /* Text style for "Agenda" */
+  font-family: "Montserrat - Black";
+  font-weight: 900;
+}
+.register {
+  border-radius: 4px;
+}
+
+.byline {
+  /* Style for "Scott Boat" */
+  width: 388px;
+  height: 112px;
+  color: #ffffff;
+  font-family: "Open Sans - Semibold";
+  font-size: 30px;
+  font-weight: 400;
+  /* Text style for "Scott Boat" */
+  font-family: "Open Sans Semibold";
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  /* Text style for "Chipotle ," */
+  font-family: "Open Sans";
+  letter-spacing: 0.6px;
+  /* Text style for "and" */
+  font-family: "Open Sans";
+  letter-spacing: 0.6px;
+}
+
+.lightning-round h3 {
+  /* Style for "Creating a" */
+  width: 795px;
+  height: 217px;
+  color: #414243;
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: 400;
+  /* Text style for "Creating a" */
+  color: #00ad9f;
+  font-family: "Open Sans - Semibold";
+  font-weight: 600;
+  line-height: 52px;
+  /* Text style for ", ot otoko" */
+  font-family: "Open Sans";
+  line-height: 52px;
+  /* Text style for "Kasi shok" */
+  font-family: "Open Sans";
+  line-height: 72px;
+}
+
+.ops-leaders-intro {
+  /* Style for "Hear from" */
+  width: 2045px;
+  height: 584px;
+  color: #414243;
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: 400;
+  /* Text style for "Hear from" */
+  line-height: 60px;
+  /* Text style for "• Creating" */
+  line-height: 68px;
+}
+
+.a-leader-text {
+  /* Style for "John Doe," */
+  width: 412px;
+  height: 274px;
+  color: #414243;
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: 400;
+  /* Text style for "John Doe," */
+  color: #00ad9f;
+  font-family: "Open Sans - Semibold";
+  font-weight: 600;
+  line-height: 52px;
+  /* Text style for "Kasi shok" */
+  font-family: "Open Sans";
+  line-height: 72px;
+  /* Text style for "ot otoko k" */
+  font-family: "Open Sans";
+  line-height: 52px;
+}
+
+.tech-hub {
+  /* Style for "Live Produ" */
+  width: 555px;
+  height: 269px;
+  color: #414243;
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: 400;
+  /* Text style for "L, ive Pro" */
+  color: #41c8bf;
+  font-family: "Open Sans - Semibold";
+  font-weight: 600;
+  letter-spacing: 0.72px;
+  line-height: 72px;
+  /* Text style for "Ganders" */
+  font-family: "Open Sans";
+  line-height: 72px;
+  /* Text style for "at bakit a" */
+  font-family: "Open Sans";
+  line-height: 52px;
+  /* Text style for "," */
+  font-family: "Open Sans - Semibold";
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 52px;
 }
