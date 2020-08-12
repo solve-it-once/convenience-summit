@@ -157,6 +157,7 @@ h3 + p > b {
   cursor: pointer;
 }
 .hover-state:hover {
+  -webkit-filter: brightness(125%);
   filter: brightness(125%);
 }
 
@@ -180,8 +181,13 @@ header .navbar .navbar-nav .nav-item .nav-link {
 }
 header .navbar .navbar-nav .nav-item .nav-link[href^="/checkout/s"] {
   background-color: #00ad9f;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   border-radius: 4px;
   color: #fff;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
   transition: all .3s ease-in;
 }
 header .navbar .navbar-nav .nav-item .nav-link[href^="/checkout/s"]:hover,
