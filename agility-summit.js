@@ -12,8 +12,11 @@ if (typeof $ === 'function') {
     // Get the iframe and its wrapper.
     var $iframeBlock = $('#pb-block-' + componentId);
 
+    // Grab the URL params.
+    const urlParams = new URLSearchParams(window.location.search);
+
     // Only make a modal and do things if the component exists.
-    if ($iframeBlock.length) {
+    if ($iframeBlock.length && !urlParams.has("edit")) {
       // Toggle for replacing the iframe on load with a button image.
       var newContents = `<button data-toggle="modal" data-target="#video-modal" class="modal-toggle hover-state button--no-styles">
         <img src="https://solveitonce.com/agility-summit/vlad_bw.jpg" alt="Open the video modal" class="img-fluid" />
