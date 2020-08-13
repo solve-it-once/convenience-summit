@@ -7,16 +7,25 @@
  * This site uses jQuery, so if you can't beat 'em, join 'em.
  */
 var componentId = '136437'; // The `id="pb-block-XXXXXX"` number of the Video component.
-if (typeof $ === 'function') {
+
+// Grab the URL params and throw in the global scope.
+var isEdit = false;
+if ('URLSearchParams' in window) {
+  const urlParams = new URLSearchParams(window.location.search);
+
+  // Don't run transformation on the edit page.
+  if (urlParams.has("edit")) {
+    isEdit = true;
+  }
+}
+
+if (typeof $ === 'function' && !isEdit) {
   $(document).ready(function() {
     // Get the iframe and its wrapper.
     var $iframeBlock = $('#pb-block-' + componentId);
 
-    // Grab the URL params.
-    const urlParams = new URLSearchParams(window.location.search);
-
     // Only make a modal and do things if the component exists.
-    if ($iframeBlock.length && !urlParams.has("edit")) {
+    if ($iframeBlock.length) {
       // Toggle for replacing the iframe on load with a button image.
       var newContents = `<button data-toggle="modal" data-target="#video-modal" class="modal-toggle hover-state button--no-styles">
         <img src="https://solveitonce.com/agility-summit/vlad_bw.jpg" alt="Open the video modal" class="img-fluid" />
