@@ -6,7 +6,7 @@
 /**
  * This site uses jQuery, so if you can't beat 'em, join 'em.
  */
-var componentId = '136437'; // The `id="pb-block-XXXXXX"` number of the Video component.
+var componentId = '169148'; // The `id="pb-block-XXXXXX"` number of the Video component.
 
 // Grab the URL params and throw in the global scope.
 var isEdit = false;
