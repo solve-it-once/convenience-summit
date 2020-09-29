@@ -81,7 +81,7 @@ if (typeof $ === 'function' && !isEdit) {
       </button>`;
 
       // New modal on the bottom of the page.
-      var videoModal = newModal('video-modal', "Vald's Introduction", '<p class="no-margin-bottom"></p>');
+      var videoModal = newModal('video-modal', "Vladik's Introduction", '<p class="no-margin-bottom"></p>');
 
       // Put the video modal at the bottom of the page.
       $('body').append(videoModal);
