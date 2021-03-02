@@ -3,11 +3,16 @@
  * All custom overrides styles for the agility summit.
  */
 
+:root {
+  --color--main: #1b3561;
+  --color--second: #ED6D23;
+}
+
 /**
  * Universal defaults and direct body props.
  */
 body {
-  color: #2b3c4b;
+  color: #0a1526;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
@@ -47,7 +52,7 @@ h2 {
  * Heading 3
  */
 h3 {
-  color: #41c8bf;
+  color: var(--color--second);
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 0.48px;
@@ -79,7 +84,7 @@ h3 + p > b {
 #pb-block-136601,
 #pb-block-136603,
 #pb-block-136433 {
-  background-color: #e0f4f5;
+  background-color: #ACC1E6;
 }
 
 /**
@@ -88,7 +93,7 @@ h3 + p > b {
 .background-color--blue-dark,
 #pb-block-136438,
 #pb-block-136537 {
-  background-color: #353f58;
+  background-color: #1b3561;
   color: #fff;
 }
 #pb-block-136438 h2 {
@@ -136,7 +141,7 @@ header .navbar .navbar-nav .nav-item .nav-link {
   font-family: 'Montserrat', Verdana, sans-serif;
 }
 header .navbar .navbar-nav .nav-item .nav-link[href^="/checkout/s"] {
-  background-color: #00ad9f;
+  background-color: var(--color--second);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -149,7 +154,7 @@ header .navbar .navbar-nav .nav-item .nav-link[href^="/checkout/s"] {
 header .navbar .navbar-nav .nav-item .nav-link[href^="/checkout/s"]:hover,
 header .navbar .navbar-nav .nav-item .nav-link[href^="/checkout/s"]:active,
 header .navbar .navbar-nav .nav-item .nav-link[href^="/checkout/s"]:focus {
-  background-color: #343f58;
+  background-color: #1b3561;
 }
 header .navbar .navbar-nav .nav-item.active .nav-link {
   font-family: 'Montserrat', Verdana, sans-serif;
@@ -213,7 +218,7 @@ header .navbar .navbar-nav .nav-item.active .nav-link {
  */
 #pb-block-136584 h3,
 #pb-block-136589 h3 {
-  color: #00ad9f;
+  color: var(--color--second);
   font-size: 20px;
   padding: 10px 0;
 }
@@ -255,7 +260,7 @@ header .navbar .navbar-nav .nav-item.active .nav-link {
   font-size: 22px;
 }
 #pb-block-136603 h3 {
-  color: #00ad9f;
+  color: var(--color--second);
   font-size: 20px;
   padding: 10px 0;
 }
@@ -292,7 +297,7 @@ header .navbar .navbar-nav .nav-item.active .nav-link {
  * Technology hub.
  */
 #pb-block-136630 h3 {
-  color: #00ad9f;
+  color: var(--color--second);
   font-size: 20px;
   padding: 10px 0;
 }
