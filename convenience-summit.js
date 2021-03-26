@@ -117,7 +117,3 @@ if (typeof $ === 'function' && !isEdit) {
     }
   });
 }
-
-/*
-
- */
