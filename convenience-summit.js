@@ -23,6 +23,22 @@ function youTubeGetID(url) {
 }
 
 /**
+ * Stop an iframe or HTML5 <video> from playing
+ * @param  {Element} element The element that contains the video
+ */
+var stopVideo = function ( element ) {
+  var iframe = element.querySelector( 'iframe');
+  var video = element.querySelector( 'video' );
+  if ( iframe ) {
+    var iframeSrc = iframe.src;
+    iframe.src = iframeSrc;
+  }
+  if ( video ) {
+    video.pause();
+  }
+};
+
+/**
  * Create the markup for a modal.
  *
  * @param id
@@ -113,6 +129,11 @@ if (typeof $ === 'function' && !isEdit) {
 
         var newYTModal = newModal('youtube-modal-' + i, 'YouTube video', iframeHtml);
         $(document.body).append(newYTModal);
+      });
+
+      // Pause videos within modals as they're hidden.
+      $('.modal').on('hide.bs.modal', function (e) {
+        stopVideo(e.target);
       });
     }
   });
